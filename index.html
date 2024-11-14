@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loan Approval Prediction</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@latest"></script>
+    <script src="app.js" defer></script>
+</head>
+<body>
+    <h1>Loan Approval Prediction</h1>
+    <form id="loanForm">
+        <label for="age">Age:</label>
+        <input type="number" id="age" name="age" required><br>
+
+        <label for="experience">Experience:</label>
+        <input type="number" id="experience" name="experience" required><br>
+
+        <label for="income">Income(in thousands):</label>
+        <input type="number" id="income" name="income" required><br>
+
+        <label for="family">Family Size:</label>
+        <input type="number" id="family" name="family" required><br>
+
+        <label for="ccavg">CCAvg:</label>
+        <input type="number" id="ccavg" name="ccavg" step="0.1" required><br>
+
+        <label for="education">Education Level(1:undergrad, 2:postgrad, 3:phd):</label>
+        <input type="number" id="education" name="education" min="1" max="3" required><br>
+
+        <label for="mortgage">Mortgage:</label>
+        <input type="number" id="mortgage" name="mortgage"><br>
+
+        <label for="securities">Securities Account:</label>
+        <input type="number" id="securities" name="securities" min="0" max="1" required><br>
+
+        <label for="cd">CD Account:</label>
+        <input type="number" id="cd" name="cd" min="0" max="1" required><br>
+
+        <label for="online">Online:</label>
+        <input type="number" id="online" name="online" min="0" max="1" required><br>
+
+        <label for="creditcard">Credit Card:</label>
+        <input type="number" id="creditcard" name="creditcard" min="0" max="1" required><br>
+
+        <button type="button" onclick="predictLoan()">Predict Loan Approval</button>
+    </form>
+    <p id="result"></p>
+</body>
+</html>
