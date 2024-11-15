@@ -3,7 +3,7 @@ let model;
 // Load the model asynchronously
 async function loadModel() {
     try {
-        model = await tf.loadLayersModel('loan_model/model.json'); // Check if this path is correct
+        model = await tf.loadLayersModel('loan_model/model.json'); 
         console.log("Model loaded successfully.");
     } catch (error) {
         console.error("Error loading model:", error);
@@ -33,7 +33,7 @@ function getFormData() {
 
 // Predict loan approval
 async function predictLoan() {
-    // Ensure the model is loaded before proceeding
+    
     if (!model) {
         console.error("Model not loaded yet.");
         document.getElementById("result").innerText = "Error: Model not loaded.";

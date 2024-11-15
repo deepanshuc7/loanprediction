@@ -1,9 +1,8 @@
-/* Reset some default styles for consistency */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}/* Style for the main heading */
+}
 h1 {
     text-align: center;
     margin-top: 20px;
@@ -12,7 +11,6 @@ h1 {
     color: #2c3e50;
 }
 
-/* Center and space out the content */
 body {
     font-family: Arial, sans-serif;
     background-color: #f4f6f9;
@@ -25,7 +23,6 @@ body {
     color: #333;
 }
 
-/* Form container styling */
 form {
     background-color: #ffffff;
     padding: 25px 30px;
@@ -37,18 +34,17 @@ form {
     margin-bottom: 20px;
 }
 
-/* Style each label and input */
 label {
     display: block;
     font-weight: bold;
-    margin: 15px 0 5px; /* Spacing between each label and input */
+    margin: 15px 0 5px; 
     color: #333;
 }
 
 input[type="number"] {
     width: 100%;
     padding: 10px;
-    margin-bottom: 10px; /* Space below each input field */
+    margin-bottom: 10px; 
     border: 1px solid #ccc;
     border-radius: 4px;
     font-size: 1rem;
@@ -60,7 +56,6 @@ input[type="number"]:focus {
     outline: none;
 }
 
-/* Style the predict button */
 button {
     width: 100%;
     padding: 12px;
@@ -71,7 +66,7 @@ button {
     font-size: 1rem;
     font-weight: bold;
     cursor: pointer;
-    margin-top: 20px; /* Space above the button */
+    margin-top: 20px; 
     transition: background-color 0.3s;
 }
 
@@ -79,7 +74,6 @@ button:hover {
     background-color: #2980b9;
 }
 
-/* Style for result message at the bottom */
 #result {
     margin-top: auto;
     font-size: 1.1rem;
